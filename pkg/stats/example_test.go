@@ -2,7 +2,6 @@ package stats
 
 import (
 	"fmt"
-
 	"github.com/MSHE97/bank/pkg/types"
 )
 
