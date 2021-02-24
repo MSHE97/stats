@@ -1,5 +1,5 @@
-module github.com/MSHE97/stats
+module github.com/MSHE97/stats/v2
 
 go 1.15
 
-require github.com/MSHE97/bank v0.0.0-20210222133824-b1ed9ffa694c
+require github.com/MSHE97/bank/v2 v2.0.2
