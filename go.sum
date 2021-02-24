@@ -1,6 +1,6 @@
-github.com/MSHE97/bank v0.0.0-20210222123459-f15de96f3c5e h1:9M8kr8qnf4VnRit8aKuWF3kg8wBWTnziv1uZwXwWuAk=
-github.com/MSHE97/bank v0.0.0-20210222123459-f15de96f3c5e/go.mod h1:aTKVkugdDXZSIP75LukM1OaPESQ6gtFvT9jsR8yEJ1g=
-github.com/MSHE97/bank v0.0.0-20210222125608-ebfaf747ed21 h1:enrU1R4T0oIaMbOPKb0Ai9GIbqMw/d6PQ3utcQ+J2DA=
-github.com/MSHE97/bank v0.0.0-20210222125608-ebfaf747ed21/go.mod h1:aTKVkugdDXZSIP75LukM1OaPESQ6gtFvT9jsR8yEJ1g=
-github.com/MSHE97/bank v0.0.0-20210222133824-b1ed9ffa694c h1:ZLY6dedg+nkmCVB4Shx2y7QQZT0iHWIaJSJWo7vbKmw=
-github.com/MSHE97/bank v0.0.0-20210222133824-b1ed9ffa694c/go.mod h1:aTKVkugdDXZSIP75LukM1OaPESQ6gtFvT9jsR8yEJ1g=
+github.com/MSHE97/bank/v2 v2.0.0 h1:lsmfJ6Sh4hxYCuYyZcyR8IDnpdH+6zM9aMLTppU0VuU=
+github.com/MSHE97/bank/v2 v2.0.0/go.mod h1:YCRqjPPqOWKc7jaPHiRr+zwnpiKgRi+KQ5aJOe09698=
+github.com/MSHE97/bank/v2 v2.0.1 h1:BZ/nF25qHzbsDqdZdN9qk9ZuqVA6vm3By0VG+FyMXjc=
+github.com/MSHE97/bank/v2 v2.0.1/go.mod h1:YCRqjPPqOWKc7jaPHiRr+zwnpiKgRi+KQ5aJOe09698=
+github.com/MSHE97/bank/v2 v2.0.2 h1:vjC0pS90E/2V0ISSNvZNEBhgYqjK/w+2xfI8iRtSIRQ=
+github.com/MSHE97/bank/v2 v2.0.2/go.mod h1:YCRqjPPqOWKc7jaPHiRr+zwnpiKgRi+KQ5aJOe09698=
