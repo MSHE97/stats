@@ -2,8 +2,18 @@ package stats
 
 import (
 	"fmt"
+	"testing"
 	"github.com/MSHE97/bank/v2/pkg/types"
 )
+
+func TestFilterbyCategory(t *testing.T) {
+	var payments []types.Payment
+	result := FilterByCategory(payments, "mobile")
+
+	if len(result) != 0 {
+		t.Error("result len !=0")
+	}
+}
 
 func ExampleTotalInCategory()  {
 	payments := []types.Payment{
