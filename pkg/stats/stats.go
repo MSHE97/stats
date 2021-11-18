@@ -13,18 +13,31 @@ func Avg(payments []types.Payment) types.Money {
 		}
 	}
 
-	return types.Money( sum / len(payments) )
+	return types.Money(sum / len(payments))
 }
 
 // TotalInCategory находит сумму покупок в определённой категории.
-func TotalInCategory( payments []types.Payment, category types.Category) types.Money {
+func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
 	sum := 0
 	for _, pay := range payments {
 		if pay.Status != types.StatusFail {
-			if (pay.Category == category){
+			if pay.Category == category {
 				sum += int(pay.Amount)
 			}
 		}
 	}
 	return types.Money(sum)
+}
+
+// FilterByCategory возвращает платежи в указанной категории
+func FilterByCategory(payments []types.Payment, category types.Category) []types.Payment {
+
+	var filtered []types.Payment
+	for _, payment := range payments {
+		if payment.Category == category {
+			filtered = append(filtered, payment)
+		}
+	}
+
+	return filtered
 }
