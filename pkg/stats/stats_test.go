@@ -8,6 +8,29 @@ import (
 	"github.com/MSHE97/bank/v2/pkg/types"
 )
 
+func TestPeriodsDynamic(t *testing.T) {
+	payments1 := map[types.Category]types.Money{
+		"cafe":    100_00,
+		"market":  50_00,
+		"service": -115_00,
+	}
+	payments2 := map[types.Category]types.Money{
+		"cafe":   125_00,
+		"market": 25_00,
+		"food":   69_00,
+	}
+
+	result := PeriodsDynamic(payments1, payments2)
+	expected := map[types.Category]types.Money{
+		"cafe":    25_00,
+		"market":  -25_00,
+		"service": 115_00,
+		"food":    69_00,
+	}
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("got\n%v \nwant:\n %v ", result, expected)
+	}
+}
 func TestCategoriesAvg(t *testing.T) {
 	payments := []types.Payment{
 		{
