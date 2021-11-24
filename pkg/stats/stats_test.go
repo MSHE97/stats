@@ -12,7 +12,7 @@ func TestPeriodsDynamic(t *testing.T) {
 	payments1 := map[types.Category]types.Money{
 		"cafe":    100_00,
 		"market":  50_00,
-		"service": 115_00,
+		"service": -115_00,
 	}
 	payments2 := map[types.Category]types.Money{
 		"cafe":   125_00,
@@ -24,7 +24,7 @@ func TestPeriodsDynamic(t *testing.T) {
 	expected := map[types.Category]types.Money{
 		"cafe":    25_00,
 		"market":  -25_00,
-		"service": -115_00,
+		"service": 115_00,
 		"food":    69_00,
 	}
 	if !reflect.DeepEqual(result, expected) {
